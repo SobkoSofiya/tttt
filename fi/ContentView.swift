@@ -167,7 +167,7 @@ struct Vi:View {
                        
                     }
                 }).alert(isPresented: $error, content: {
-                    Alert(title: Text("Error"), message: Text("\(mess)"), dismissButton: .default(Text("")))
+                    Alert(title: Text("Error"), message: Text("\(mess)"), dismissButton: .default(Text("Ok")))
                 })
               .offset(x: -50)
             }.offset( x:30, y: 150)
@@ -175,3 +175,17 @@ struct Vi:View {
         }.edgesIgnoringSafeArea(.all)
     }
 }
+
+//
+//struct Custon:View {
+//    @Binding var pass:String
+//    @State var place:Image
+//    @State var
+//    var body: some View{
+//        ZStack{
+//            if pass.isEmpty{
+//                place
+//            }
+//        }
+//    }
+//}
